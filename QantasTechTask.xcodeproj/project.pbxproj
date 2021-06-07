@@ -15,6 +15,12 @@
 		696D0DA5266EDFAC007C8C2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 696D0DA3266EDFAC007C8C2C /* LaunchScreen.storyboard */; };
 		696D0DB0266EDFAC007C8C2C /* QantasTechTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696D0DAF266EDFAC007C8C2C /* QantasTechTaskTests.swift */; };
 		696D0DBB266EDFAC007C8C2C /* QantasTechTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696D0DBA266EDFAC007C8C2C /* QantasTechTaskUITests.swift */; };
+		696D0DCE266EE09F007C8C2C /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696D0DCD266EE09F007C8C2C /* HTTPClient.swift */; };
+		696D0DD0266EE0ED007C8C2C /* URL+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696D0DCF266EE0ED007C8C2C /* URL+Extension.swift */; };
+		696D0DD2266EE28D007C8C2C /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696D0DD1266EE28D007C8C2C /* Util.swift */; };
+		696D0DD3266EE28D007C8C2C /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696D0DD1266EE28D007C8C2C /* Util.swift */; };
+		696D0DD5266EE35B007C8C2C /* Airports.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696D0DD4266EE35B007C8C2C /* Airports.swift */; };
+		696D0DD6266EE35B007C8C2C /* Airports.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696D0DD4266EE35B007C8C2C /* Airports.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,10 @@
 		696D0DB6266EDFAC007C8C2C /* QantasTechTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QantasTechTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		696D0DBA266EDFAC007C8C2C /* QantasTechTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QantasTechTaskUITests.swift; sourceTree = "<group>"; };
 		696D0DBC266EDFAC007C8C2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		696D0DCD266EE09F007C8C2C /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		696D0DCF266EE0ED007C8C2C /* URL+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extension.swift"; sourceTree = "<group>"; };
+		696D0DD1266EE28D007C8C2C /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		696D0DD4266EE35B007C8C2C /* Airports.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airports.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +109,11 @@
 		696D0D97266EDFAB007C8C2C /* QantasTechTask */ = {
 			isa = PBXGroup;
 			children = (
+				696D0DC8266EDFD6007C8C2C /* Extensions */,
+				696D0DC9266EDFEB007C8C2C /* Helpers */,
+				696D0DCA266EE001007C8C2C /* Model */,
+				696D0DCB266EE00F007C8C2C /* Service */,
+				696D0DCC266EE01D007C8C2C /* View */,
 				696D0D98266EDFAB007C8C2C /* AppDelegate.swift */,
 				696D0D9A266EDFAB007C8C2C /* SceneDelegate.swift */,
 				696D0D9C266EDFAB007C8C2C /* ViewController.swift */,
@@ -126,6 +141,45 @@
 				696D0DBC266EDFAC007C8C2C /* Info.plist */,
 			);
 			path = QantasTechTaskUITests;
+			sourceTree = "<group>";
+		};
+		696D0DC8266EDFD6007C8C2C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				696D0DCF266EE0ED007C8C2C /* URL+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		696D0DC9266EDFEB007C8C2C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				696D0DD1266EE28D007C8C2C /* Util.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		696D0DCA266EE001007C8C2C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				696D0DD4266EE35B007C8C2C /* Airports.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		696D0DCB266EE00F007C8C2C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				696D0DCD266EE09F007C8C2C /* HTTPClient.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		696D0DCC266EE01D007C8C2C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,8 +312,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				696D0DD5266EE35B007C8C2C /* Airports.swift in Sources */,
 				696D0D9D266EDFAB007C8C2C /* ViewController.swift in Sources */,
+				696D0DD2266EE28D007C8C2C /* Util.swift in Sources */,
 				696D0D99266EDFAB007C8C2C /* AppDelegate.swift in Sources */,
+				696D0DCE266EE09F007C8C2C /* HTTPClient.swift in Sources */,
+				696D0DD0266EE0ED007C8C2C /* URL+Extension.swift in Sources */,
 				696D0D9B266EDFAB007C8C2C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,6 +327,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				696D0DB0266EDFAC007C8C2C /* QantasTechTaskTests.swift in Sources */,
+				696D0DD3266EE28D007C8C2C /* Util.swift in Sources */,
+				696D0DD6266EE35B007C8C2C /* Airports.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,6 +503,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = au.com.QantasTechTask;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -462,6 +523,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = au.com.QantasTechTask;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
