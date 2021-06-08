@@ -170,8 +170,8 @@
 		696D0DC9266EDFEB007C8C2C /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				696D0DD1266EE28D007C8C2C /* Util.swift */,
 				6993D51C266F405B00A26D0A /* Plist.swift */,
+				696D0DD1266EE28D007C8C2C /* Util.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
