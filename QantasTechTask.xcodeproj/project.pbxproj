@@ -21,6 +21,9 @@
 		696D0DD3266EE28D007C8C2C /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696D0DD1266EE28D007C8C2C /* Util.swift */; };
 		696D0DD5266EE35B007C8C2C /* Airports.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696D0DD4266EE35B007C8C2C /* Airports.swift */; };
 		696D0DD6266EE35B007C8C2C /* Airports.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696D0DD4266EE35B007C8C2C /* Airports.swift */; };
+		696D0DD8266EE667007C8C2C /* AirportsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696D0DD7266EE667007C8C2C /* AirportsViewController.swift */; };
+		696D0DDB266EE834007C8C2C /* AirportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696D0DDA266EE834007C8C2C /* AirportViewController.swift */; };
+		696D0DDD266EE9A0007C8C2C /* AirportCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696D0DDC266EE9A0007C8C2C /* AirportCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,9 @@
 		696D0DCF266EE0ED007C8C2C /* URL+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extension.swift"; sourceTree = "<group>"; };
 		696D0DD1266EE28D007C8C2C /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		696D0DD4266EE35B007C8C2C /* Airports.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airports.swift; sourceTree = "<group>"; };
+		696D0DD7266EE667007C8C2C /* AirportsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportsViewController.swift; sourceTree = "<group>"; };
+		696D0DDA266EE834007C8C2C /* AirportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportViewController.swift; sourceTree = "<group>"; };
+		696D0DDC266EE9A0007C8C2C /* AirportCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +184,9 @@
 		696D0DCC266EE01D007C8C2C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				696D0DD7266EE667007C8C2C /* AirportsViewController.swift */,
+				696D0DDA266EE834007C8C2C /* AirportViewController.swift */,
+				696D0DDC266EE9A0007C8C2C /* AirportCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -314,7 +323,10 @@
 			files = (
 				696D0DD5266EE35B007C8C2C /* Airports.swift in Sources */,
 				696D0D9D266EDFAB007C8C2C /* ViewController.swift in Sources */,
+				696D0DD8266EE667007C8C2C /* AirportsViewController.swift in Sources */,
+				696D0DDD266EE9A0007C8C2C /* AirportCell.swift in Sources */,
 				696D0DD2266EE28D007C8C2C /* Util.swift in Sources */,
+				696D0DDB266EE834007C8C2C /* AirportViewController.swift in Sources */,
 				696D0D99266EDFAB007C8C2C /* AppDelegate.swift in Sources */,
 				696D0DCE266EE09F007C8C2C /* HTTPClient.swift in Sources */,
 				696D0DD0266EE0ED007C8C2C /* URL+Extension.swift in Sources */,

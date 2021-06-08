@@ -57,6 +57,36 @@ class Airport: Codable {
     }
 }
 
+extension Airport  {
+    
+    var airportType: String? {
+        get {
+            if internationalAirport == true {
+                return "International"
+            }else if domesticAirport == true {
+                return "Domestic"
+            }else if regionalAirport == true {
+                return "Regional"
+            }else{
+                return "Not specified"
+            }
+        }
+    }
+    
+    var locationDisplay: String? {
+        get {
+            if let lat = location?.latitude, let latDir = location?.latitudeDirection, let long = location?.longitude, let longDir = location?.longitudeDirection {
+                let latDisplay = String(Int(lat)) + "º " + latDir
+                let longDisplay = String(Int(long)) + "º " + longDir
+                return latDisplay + ", " + longDisplay
+            }else{
+                return "Not specified"
+            }
+        }
+    }
+    
+}
+
 // MARK: - City
 class City: Codable {
     var cityCode: String?

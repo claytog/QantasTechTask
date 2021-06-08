@@ -42,7 +42,7 @@ class HTTPClient {
                 return completion(.failure(.noData))
             }
      
-            guard let detail = try? decoder.decode(Properties.self, from: data) else {
+            guard let detail = try? decoder.decode(Airports.self, from: data) else {
                 return completion(.failure(.decodingError))
             }
             
