@@ -32,13 +32,8 @@ class AirportCell: UITableViewCell {
     
     func setupView(_ cell: AirportCell, _ airport: Airport?) {
         
-        cell.airportCodeLabel.text = airport?.airportCode
         cell.airportNameLabel.text = airport?.airportName
-        cell.airportTypeLabel.text = airport?.airportType
-        cell.cityLabel.text = airport?.city?.cityName
         cell.countryLabel.text = airport?.country?.countryName
-        cell.timezoneLabel.text = airport?.city?.timeZoneName
-        cell.locationLabel.text = airport?.locationDisplay
         
     }
     

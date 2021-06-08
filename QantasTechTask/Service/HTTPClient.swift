@@ -35,8 +35,8 @@ class HTTPClient {
 
         URLSession.shared.dataTask(with: request){ data, response, error in
             
-            let str = String(decoding: data!, as: UTF8.self)
-            print(str)
+//            let str = String(decoding: data!, as: UTF8.self)
+//            print(str)
             
             guard let data = data, error == nil else{
                 return completion(.failure(.noData))

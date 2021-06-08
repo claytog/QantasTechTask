@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AirportCell" rowHeight="80" id="QfE-fH-0AA" customClass="AirportCell" customModule="QantasTechTask" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="417" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QfE-fH-0AA" id="RXu-jl-1Hf" customClass="AirportCell" customModule="QantasTechTask" customModuleProvider="target">
+                <rect key="frame" x="0.0" y="0.0" width="417" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="airportNameLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VMe-j0-8AB">
+                        <rect key="frame" x="30" y="8" width="137" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="countryLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LiJ-lw-eQQ">
+                        <rect key="frame" x="30" y="37" width="84.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="LiJ-lw-eQQ" firstAttribute="leading" secondItem="RXu-jl-1Hf" secondAttribute="leading" constant="30" id="2y3-o0-EqM"/>
+                    <constraint firstItem="LiJ-lw-eQQ" firstAttribute="top" secondItem="VMe-j0-8AB" secondAttribute="bottom" constant="8" id="dX2-j7-t3g"/>
+                    <constraint firstItem="VMe-j0-8AB" firstAttribute="leading" secondItem="RXu-jl-1Hf" secondAttribute="leading" constant="30" id="lxM-b9-F2s"/>
+                    <constraint firstItem="VMe-j0-8AB" firstAttribute="top" secondItem="RXu-jl-1Hf" secondAttribute="top" constant="8" id="mNV-U0-9H3"/>
+                </constraints>
+                <connections>
+                    <outlet property="airportNameLabel" destination="VMe-j0-8AB" id="ZI7-SQ-X80"/>
+                    <outlet property="countryLabel" destination="LiJ-lw-eQQ" id="nPf-H1-Qid"/>
+                </connections>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="airportNameLabel" destination="VMe-j0-8AB" id="Vki-ya-be8"/>
+                <outlet property="countryLabel" destination="LiJ-lw-eQQ" id="CJQ-0d-sU6"/>
+            </connections>
+            <point key="canvasLocation" x="231.15942028985509" y="33.482142857142854"/>
+        </tableViewCell>
+    </objects>
+</document>

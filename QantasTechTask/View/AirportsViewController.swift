@@ -67,6 +67,7 @@ class AirportsViewController: UIViewController{
 
 extension AirportsViewController : UITableViewDelegate,  UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+
         return airports?.count ?? 0
     }
     
@@ -88,7 +89,7 @@ extension AirportsViewController : UITableViewDelegate,  UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-          return 330
+          return 50
     }
     
 }

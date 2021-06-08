@@ -24,6 +24,7 @@
 		696D0DD8266EE667007C8C2C /* AirportsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696D0DD7266EE667007C8C2C /* AirportsViewController.swift */; };
 		696D0DDB266EE834007C8C2C /* AirportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696D0DDA266EE834007C8C2C /* AirportViewController.swift */; };
 		696D0DDD266EE9A0007C8C2C /* AirportCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696D0DDC266EE9A0007C8C2C /* AirportCell.swift */; };
+		696D0DDF266EFB1A007C8C2C /* AirportCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 696D0DDE266EFB1A007C8C2C /* AirportCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		696D0DD7266EE667007C8C2C /* AirportsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportsViewController.swift; sourceTree = "<group>"; };
 		696D0DDA266EE834007C8C2C /* AirportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportViewController.swift; sourceTree = "<group>"; };
 		696D0DDC266EE9A0007C8C2C /* AirportCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportCell.swift; sourceTree = "<group>"; };
+		696D0DDE266EFB1A007C8C2C /* AirportCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AirportCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +189,7 @@
 				696D0DD7266EE667007C8C2C /* AirportsViewController.swift */,
 				696D0DDA266EE834007C8C2C /* AirportViewController.swift */,
 				696D0DDC266EE9A0007C8C2C /* AirportCell.swift */,
+				696D0DDE266EFB1A007C8C2C /* AirportCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				696D0DA5266EDFAC007C8C2C /* LaunchScreen.storyboard in Resources */,
+				696D0DDF266EFB1A007C8C2C /* AirportCell.xib in Resources */,
 				696D0DA2266EDFAC007C8C2C /* Assets.xcassets in Resources */,
 				696D0DA0266EDFAB007C8C2C /* Main.storyboard in Resources */,
 			);
