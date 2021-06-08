@@ -9,7 +9,7 @@ import Foundation
 
 extension URL {
     // web service endpoint
-    private static var host = "https://api.qantas.com/flight/refData/airport"
+    private static var host = Plist.get(key: "baseURL", fromPlist: "API")
     
     static func getAirports() -> URL? {
         
