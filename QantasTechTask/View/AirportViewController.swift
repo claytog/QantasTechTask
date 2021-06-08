@@ -9,14 +9,26 @@ import UIKit
 
 class AirportViewController: UIViewController {
 
-    @IBOutlet var airportCodeLabel: UILabel!
+    @IBOutlet weak var airportCodeLabel: UILabel!
+    @IBOutlet weak var airportNameLabel: UILabel!
+    @IBOutlet weak var airportTypeLabel: UILabel!
+    @IBOutlet weak var cityLabel: UILabel!
+    @IBOutlet weak var countryLabel: UILabel!
+    @IBOutlet weak var timezoneLabel: UILabel!
+    @IBOutlet weak var locationLabel: UILabel!
     
     var airport: Airport!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        airportCodeLabel.text = airport.airportCode
+        airportCodeLabel.text = airport.airportCodeDisplay
+        airportNameLabel.text = airport.airportName
+        airportTypeLabel.text = airport.airportType
+        cityLabel.text = airport.city?.cityName
+        countryLabel.text = airport.country?.countryName
+        timezoneLabel.text = airport.city?.timeZoneName
+        locationLabel.text = airport.locationDisplay
     }
     
 

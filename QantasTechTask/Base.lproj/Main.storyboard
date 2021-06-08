@@ -33,11 +33,162 @@
                     <navigationItem key="navigationItem" title="Airports" id="GAW-wX-0M8"/>
                     <connections>
                         <outlet property="airportsTableView" destination="pPt-0z-Uho" id="a1z-Mt-wJg"/>
+                        <segue destination="2nA-Bg-oTc" kind="show" identifier="AirportSegue" id="6CX-9r-d5l"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1047.8260869565217" y="94.419642857142847"/>
+            <point key="canvasLocation" x="936" y="94"/>
+        </scene>
+        <!--Airport View Controller-->
+        <scene sceneID="Jaa-aE-Uhc">
+            <objects>
+                <viewController id="2nA-Bg-oTc" customClass="AirportViewController" customModule="QantasTechTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RYD-gw-uom">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mVJ-lw-Yhr">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="airportNameLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sPw-sB-YYH">
+                                        <rect key="frame" x="133" y="110" width="148" height="21"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="airportCodeLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lgw-b9-nm1">
+                                        <rect key="frame" x="140.5" y="151" width="133" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zot-cz-aAi">
+                                        <rect key="frame" x="0.0" y="196" width="414" height="616"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FsM-fD-V0Z">
+                                                <rect key="frame" x="22" y="64" width="35" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZIG-XG-95V">
+                                                <rect key="frame" x="22" y="107" width="66" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timezone:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="98j-v5-2Ye">
+                                                <rect key="frame" x="22" y="150" width="80" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cWx-gB-28g">
+                                                <rect key="frame" x="22" y="193" width="70" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="airportTypeLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bLz-sR-owT">
+                                                <rect key="frame" x="148" y="21" width="129" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="cityLabel" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B3v-zU-Ydw">
+                                                <rect key="frame" x="148" y="63" width="69" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="countryLabel" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FsW-TJ-V03">
+                                                <rect key="frame" x="148" y="105" width="100" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="timezoneLabel" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OMv-Ib-mUR">
+                                                <rect key="frame" x="148" y="148" width="112" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="locationLabel" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1YT-dJ-Ote">
+                                                <rect key="frame" x="148" y="191" width="102" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Airport Type:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="plm-0z-q6D">
+                                                <rect key="frame" x="22" y="21" width="100" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                        <constraints>
+                                            <constraint firstItem="ZIG-XG-95V" firstAttribute="leading" secondItem="zot-cz-aAi" secondAttribute="leading" constant="22" id="0XF-DM-9Cv"/>
+                                            <constraint firstItem="FsM-fD-V0Z" firstAttribute="top" secondItem="plm-0z-q6D" secondAttribute="bottom" constant="22" id="51P-3D-yH9"/>
+                                            <constraint firstItem="1YT-dJ-Ote" firstAttribute="leading" secondItem="cWx-gB-28g" secondAttribute="trailing" constant="56" id="55u-Ey-nVO"/>
+                                            <constraint firstItem="B3v-zU-Ydw" firstAttribute="leading" secondItem="FsM-fD-V0Z" secondAttribute="trailing" constant="91" id="AeR-r4-ODc"/>
+                                            <constraint firstItem="FsW-TJ-V03" firstAttribute="top" secondItem="B3v-zU-Ydw" secondAttribute="bottom" constant="21" id="BLB-HF-9HK"/>
+                                            <constraint firstItem="OMv-Ib-mUR" firstAttribute="top" secondItem="FsW-TJ-V03" secondAttribute="bottom" constant="22" id="EQv-yw-QKK"/>
+                                            <constraint firstItem="98j-v5-2Ye" firstAttribute="top" secondItem="ZIG-XG-95V" secondAttribute="bottom" constant="22" id="FCQ-qE-fop"/>
+                                            <constraint firstItem="1YT-dJ-Ote" firstAttribute="top" secondItem="OMv-Ib-mUR" secondAttribute="bottom" constant="22" id="FKa-nX-1Pi"/>
+                                            <constraint firstItem="B3v-zU-Ydw" firstAttribute="top" secondItem="bLz-sR-owT" secondAttribute="bottom" constant="21" id="HAX-Uj-wpA"/>
+                                            <constraint firstItem="cWx-gB-28g" firstAttribute="top" secondItem="98j-v5-2Ye" secondAttribute="bottom" constant="22" id="HLd-D2-1VF"/>
+                                            <constraint firstItem="plm-0z-q6D" firstAttribute="leading" secondItem="zot-cz-aAi" secondAttribute="leading" constant="22" id="JMq-vJ-IXh"/>
+                                            <constraint firstItem="FsW-TJ-V03" firstAttribute="leading" secondItem="ZIG-XG-95V" secondAttribute="trailing" constant="60" id="RRo-5T-suo"/>
+                                            <constraint firstItem="FsM-fD-V0Z" firstAttribute="leading" secondItem="zot-cz-aAi" secondAttribute="leading" constant="22" id="Sok-gB-XSq"/>
+                                            <constraint firstItem="bLz-sR-owT" firstAttribute="leading" secondItem="plm-0z-q6D" secondAttribute="trailing" constant="26" id="Zka-Bg-eY0"/>
+                                            <constraint firstItem="98j-v5-2Ye" firstAttribute="leading" secondItem="zot-cz-aAi" secondAttribute="leading" constant="22" id="bvE-55-lmG"/>
+                                            <constraint firstItem="plm-0z-q6D" firstAttribute="top" secondItem="zot-cz-aAi" secondAttribute="top" constant="21" id="cR5-43-d2M"/>
+                                            <constraint firstItem="OMv-Ib-mUR" firstAttribute="leading" secondItem="98j-v5-2Ye" secondAttribute="trailing" constant="46" id="guB-cz-9yh"/>
+                                            <constraint firstItem="ZIG-XG-95V" firstAttribute="top" secondItem="FsM-fD-V0Z" secondAttribute="bottom" constant="22" id="nIi-py-JfD"/>
+                                            <constraint firstItem="cWx-gB-28g" firstAttribute="leading" secondItem="zot-cz-aAi" secondAttribute="leading" constant="22" id="wdl-YP-6HN"/>
+                                            <constraint firstItem="bLz-sR-owT" firstAttribute="top" secondItem="zot-cz-aAi" secondAttribute="top" constant="21" id="ycw-PO-3BP"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="Lgw-b9-nm1" firstAttribute="top" secondItem="sPw-sB-YYH" secondAttribute="bottom" constant="20" id="1rB-LP-9Gl"/>
+                                    <constraint firstItem="zot-cz-aAi" firstAttribute="leading" secondItem="mVJ-lw-Yhr" secondAttribute="leading" id="9Ma-Pn-FN6"/>
+                                    <constraint firstAttribute="trailing" secondItem="zot-cz-aAi" secondAttribute="trailing" id="Arv-8f-aVk"/>
+                                    <constraint firstItem="zot-cz-aAi" firstAttribute="centerX" secondItem="mVJ-lw-Yhr" secondAttribute="centerX" id="D91-EI-i7K"/>
+                                    <constraint firstAttribute="bottom" secondItem="zot-cz-aAi" secondAttribute="bottom" priority="250" constant="84" id="TV5-2q-Y4V"/>
+                                    <constraint firstItem="Lgw-b9-nm1" firstAttribute="centerX" secondItem="mVJ-lw-Yhr" secondAttribute="centerX" id="Y9e-EQ-F11"/>
+                                    <constraint firstItem="sPw-sB-YYH" firstAttribute="centerX" secondItem="mVJ-lw-Yhr" secondAttribute="centerX" id="dPm-3x-5IS"/>
+                                    <constraint firstItem="zot-cz-aAi" firstAttribute="top" secondItem="Lgw-b9-nm1" secondAttribute="bottom" constant="24" id="qVe-Tm-GZT"/>
+                                    <constraint firstItem="sPw-sB-YYH" firstAttribute="top" secondItem="mVJ-lw-Yhr" secondAttribute="top" constant="110" id="wTZ-0m-Mvi"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cqR-If-3KT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="mVJ-lw-Yhr" secondAttribute="bottom" id="9Sn-ud-ooc"/>
+                            <constraint firstItem="mVJ-lw-Yhr" firstAttribute="leading" secondItem="cqR-If-3KT" secondAttribute="leading" id="A5b-hb-jFX"/>
+                            <constraint firstItem="mVJ-lw-Yhr" firstAttribute="top" secondItem="RYD-gw-uom" secondAttribute="top" id="dg0-Fz-43I"/>
+                            <constraint firstItem="mVJ-lw-Yhr" firstAttribute="trailing" secondItem="cqR-If-3KT" secondAttribute="trailing" id="lwC-e5-yEx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="VXU-jS-6iR"/>
+                    <connections>
+                        <outlet property="airportCodeLabel" destination="Lgw-b9-nm1" id="782-Lj-Joj"/>
+                        <outlet property="airportNameLabel" destination="sPw-sB-YYH" id="VFw-lm-wQE"/>
+                        <outlet property="airportTypeLabel" destination="bLz-sR-owT" id="aRu-1t-F8J"/>
+                        <outlet property="cityLabel" destination="B3v-zU-Ydw" id="rq2-3M-1VO"/>
+                        <outlet property="countryLabel" destination="FsW-TJ-V03" id="kvy-dB-VpQ"/>
+                        <outlet property="locationLabel" destination="1YT-dJ-Ote" id="LoN-Kg-10x"/>
+                        <outlet property="timezoneLabel" destination="OMv-Ib-mUR" id="G3K-0i-1nB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="avc-j9-xBG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1792.753623188406" y="93.75"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="3mV-BX-5RJ">
@@ -59,6 +210,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

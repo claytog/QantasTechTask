@@ -9,13 +9,8 @@ import UIKit
 
 class AirportCell: UITableViewCell {
 
-    @IBOutlet weak var airportCodeLabel: UILabel!
     @IBOutlet weak var airportNameLabel: UILabel!
-    @IBOutlet weak var airportTypeLabel: UILabel!
-    @IBOutlet weak var cityLabel: UILabel!
     @IBOutlet weak var countryLabel: UILabel!
-    @IBOutlet weak var timezoneLabel: UILabel!
-    @IBOutlet weak var locationLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

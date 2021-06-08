@@ -76,11 +76,21 @@ extension Airport  {
     var locationDisplay: String? {
         get {
             if let lat = location?.latitude, let latDir = location?.latitudeDirection, let long = location?.longitude, let longDir = location?.longitudeDirection {
-                let latDisplay = String(Int(lat)) + "º " + latDir
-                let longDisplay = String(Int(long)) + "º " + longDir
+                let latDisplay = String(lat) + "º" + latDir
+                let longDisplay = String(long) + "º" + longDir
                 return latDisplay + ", " + longDisplay
             }else{
                 return "Not specified"
+            }
+        }
+    }
+    
+    var airportCodeDisplay: String? {
+        get {
+            if let airportCodeDisplay = airportCode {
+                return "(" + airportCodeDisplay + ")"
+            }else{
+                return ""
             }
         }
     }

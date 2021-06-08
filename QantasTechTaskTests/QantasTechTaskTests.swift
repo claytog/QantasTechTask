@@ -29,5 +29,28 @@ class QantasTechTaskTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
+    
+    func testDecoder() throws {
+        /*
+         This test case is to test the decoding of the web service payload, where the example data is found in the file "TestData.json".
+         */
+        
+        let jsonData =  Util.readJSON(fileName: "TestData")
+        
+        if let data = jsonData, let utf8Text = String(data: data, encoding: .utf8) {
+            print("Test data: \(utf8Text)")
+        }
+
+        let decoder = JSONDecoder()
+        decoder.dateDecodingStrategy = .iso8601
+
+        let airportsDetail = try? decoder.decode(Airports.self, from: jsonData!)
+
+        let airport = airportsDetail?[0]
+        
+        XCTAssertTrue(airport?.airportCode == "AAA")
+            
+    }
+
 
 }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		696BAC9F266F36CC00D3EA6F /* TestData.json in Resources */ = {isa = PBXBuildFile; fileRef = 696BAC9E266F36CC00D3EA6F /* TestData.json */; };
+		696BACA0266F381400D3EA6F /* TestData.json in Resources */ = {isa = PBXBuildFile; fileRef = 696BAC9E266F36CC00D3EA6F /* TestData.json */; };
 		696D0D99266EDFAB007C8C2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696D0D98266EDFAB007C8C2C /* AppDelegate.swift */; };
 		696D0D9B266EDFAB007C8C2C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696D0D9A266EDFAB007C8C2C /* SceneDelegate.swift */; };
 		696D0D9D266EDFAB007C8C2C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696D0D9C266EDFAB007C8C2C /* ViewController.swift */; };
@@ -45,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		696BAC9E266F36CC00D3EA6F /* TestData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TestData.json; sourceTree = "<group>"; };
 		696D0D95266EDFAB007C8C2C /* QantasTechTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QantasTechTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		696D0D98266EDFAB007C8C2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		696D0D9A266EDFAB007C8C2C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -138,6 +141,7 @@
 			children = (
 				696D0DAF266EDFAC007C8C2C /* QantasTechTaskTests.swift */,
 				696D0DB1266EDFAC007C8C2C /* Info.plist */,
+				696BAC9E266F36CC00D3EA6F /* TestData.json */,
 			);
 			path = QantasTechTaskTests;
 			sourceTree = "<group>";
@@ -297,6 +301,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				696BACA0266F381400D3EA6F /* TestData.json in Resources */,
 				696D0DA5266EDFAC007C8C2C /* LaunchScreen.storyboard in Resources */,
 				696D0DDF266EFB1A007C8C2C /* AirportCell.xib in Resources */,
 				696D0DA2266EDFAC007C8C2C /* Assets.xcassets in Resources */,
@@ -308,6 +313,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				696BAC9F266F36CC00D3EA6F /* TestData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
