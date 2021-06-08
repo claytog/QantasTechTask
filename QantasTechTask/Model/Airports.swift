@@ -5,8 +5,6 @@
 //  Created by Clayton on 8/6/21.
 //
 
-//   let welcome = try? newJSONDecoder().decode(Welcome.self, from: jsonData)
-
 import Foundation
 
 typealias Airports = [Airport]
