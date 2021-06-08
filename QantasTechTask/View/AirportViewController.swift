@@ -31,7 +31,10 @@ class AirportViewController: UIViewController {
         locationLabel.text = airport.locationDisplay
     }
     
-
+    @IBAction func didPressAirports(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
     /*
     // MARK: - Navigation
 
